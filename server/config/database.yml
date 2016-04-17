@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: sibi_test_job_development
+
+test:
+  <<: *default
+  database: sibi_test_job_test
+
+production:
+  <<: *default
+  database: sibi_test_job_production
+  username: sibi_test_job
+  password: <%= ENV['SIBI_TEST_JOB_DATABASE_PASSWORD'] %>
