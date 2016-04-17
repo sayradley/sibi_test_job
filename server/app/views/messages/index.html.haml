@@ -1,0 +1,7 @@
+%h2 Bike Messages
+
+%ul#messages-container
+  - @messages.each do |message|
+    %li
+      Client ID: #{message.client_id}
+      Content: #{message.content}
