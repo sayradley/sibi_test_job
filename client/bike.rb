@@ -8,7 +8,7 @@ class Bike
   end
 
   def send_message
-    redis.rpush 'bike_messages', { client_id: @id, content: SecureRandom.hex(500) }.to_json
+    redis.rpush 'bike_messages', { client_id: @id, content: SecureRandom.hex(250) }.to_json
   end
 
   def redis
