@@ -1,5 +1,5 @@
 # TEST JOB
-I decided to have realtime updates with ActionCable from Rails 5. There might be couple deprecation warnings due to unstable Rails version (beta 3), so just ignore them.
+There might be couple deprecation warnings due to unstable Rails version (beta 3), so just ignore them.
 
 ## Configuration & Startup
 #### Server
